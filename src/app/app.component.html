@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Tic Tac Toe</h1>
+  <div class="game-container">
+    <div class="game-cell" *ngFor="let cell of GAME_STATE; let i = index;" (click)="playInCell(i)">{{ cell }}</div>
+  </div>
+  <h2 class="game-notification">{{ STATUS_DISPLAY }}</h2>
+  <button (click)="restartGame()" class="game-restart">Restablecer</button>    
+</div>
